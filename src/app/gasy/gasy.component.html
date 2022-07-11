@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <div class="gasy-card" [ngClass]="{ clicked : cardStatut ===true}">
+    <h2>{{kapaGasy.title}}</h2>
+    <button (click)="onShowMore()">{{buttonTextShowDetail}}</button>
+  </div>
+
+  <div class="single-gasy-card" *ngIf="cardStatut" [ngClass]="{ clicked: buttonText === '👎' }">
+    <h2>{{kapaGasy.title}}</h2>
+    <p class="textColor">
+      <span> color avaible :</span>
+      {{kapaGasy.color}}
+    </p>
+    <div class="imageBlock">
+        <img [src]="kapaGasy.imageUrl" [alt]="kapaGasy.title">
+    </div>
+    <p>only for : {{kapaGasy.prix}} Ariary</p>
+    <p>
+        <button>{{buttonText}}</button>
+        {{kapaGasy.snap}}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,77 @@
+.wrapper{
+  position: relative;
+}
+.gasy-card {
+  width: 42vw;
+  height: 100px;
+  margin: 10px 6%;
+  padding: 5px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  &:hover{
+    transition: 0.7s;
+    transform: translate(30px);
+  }
+
+  h2{
+    color: rgb(103, 41, 24);
+    margin-top: 5px;
+  }
+}
+.single-gasy-card{
+  background-color: rgba(162, 160, 160, 0.969);
+  position: absolute;
+  right: 15%;
+  top: 0;
+  width: 30vw;
+  height: 470px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  z-index:1;
+  h2{
+    margin-top: 7px;
+    margin-bottom: 4px;
+    text-align: center;
+    color: rgb(165, 69, 42);
+    font-weight: bold;
+    font-style: italic;
+  }
+  .textColor{
+    margin: 7px ;
+    span{
+      color: rgb(82, 31, 17);
+      font-weight: bolder;
+      text-decoration: underline ;
+    }
+  }
+  .imageBlock{
+    width: 100%;
+    height: 56%;
+    text-align: center;
+    img {
+      width: 80%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+}
+.clicked {
+  background-color:rgb(155 56 0 / 87%);
+  color: rgb(82, 31, 17);
+  transition: 0.7s;
+  transform: translate(30px);
+  button {
+    box-shadow: rgb(155 56 0 / 87%) 3px 3px 7px;
+    color: rgb(82, 31, 17);
+    &:active {
+      box-shadow: rgb(82, 31, 17) 0 0 5px;
+    }
+  }
+  h2{
+    color: rgb(29, 13, 8);
+  }
+}

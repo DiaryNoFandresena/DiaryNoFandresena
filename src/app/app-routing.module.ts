@@ -1,7 +1,12 @@
-import { NgModule } from '@angular/core';
+import { GasyListComponent } from './gasy-list/gasy-list.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path :'' , component : LandingPageComponent },
+  { path :'e-gasyList' , component : GasyListComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

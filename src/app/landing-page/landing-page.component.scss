@@ -1,0 +1,16 @@
+.landingPage{
+  margin-top: 32vh;
+  text-align: center;
+  h1{
+    color:rgb(104, 104, 104);
+    font-weight: bold;
+    font-style: italic;
+  }
+  img{
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+      transform: scale(1.05,1.05);
+    }
+  }
+}

@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: Roboto, Helvetica, sans-serif;
+    font-style: italic;
+}
+body{
+ padding: 0;
+ margin: 0;
+ background-color: rgb(234, 234, 234);
+}
+a{
+ text-decoration: none;
+}
+button {
+    background-color: rgba(235, 235, 235, 0.689);
+    box-sizing: border-box;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: lightgray 3px 3px 7px;
+    margin-right: 20px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    &:active {
+      transform: translate(1px , 1px );
+      box-shadow: lightgray 0 0 5px;
+    }
+}
